@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quality & price</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./imgs/logo-2.png">
+  <script src="https://kit.fontawesome.com/da543ab6e2.js" crossorigin="anonymous"></script>
+
+  <!-- slider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+</head>
+</head>
+
+<body onload="loadHome()">
+
+  <header style="margin-bottom: 5%;">
+    <nav>
+      <div>
+        <img src="./imgs/logo-b&w.png" alt="logo">
+        <p onclick="openVideo()">من نحن ؟</p>
+      </div>
+      <ul>
+        <li><a href="./pages/contact-us.html">تواصل معنا</a></li>
+        <li><a href="./pages/products.html">منتجاتنا</a></li>
+        <li style="background-color: #255389"><a href="./index.html">الرئيسة</a></li>
+      </ul>
+    </nav>
+    <div id="hero">
+      <div id="right">
+        <p>
+          <span id="one">مؤسسة</span>
+          <span id="two">جودة و سعر</span>
+          <span id="three">quality & price</span>
+        </p>
+        <img src="./imgs/logo-2.png" alt="logo">
+      </div>
+      <div id="left">
+        <div class="button">
+          <a href="https://api.whatsapp.com/send?phone=966555398846">
+            <span>تواصل الان </span>
+            <img src="./imgs/whatsapp.png" alt="whatsapp-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <img src="./imgs/wave.png" alt="" id="wave">
+    <div id="theFULL"></div>
+    <div id="mask"></div>
+    <p id="close" onclick="closeVideo()">x</p>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="owl-carousel">
+        <div>
+          <img src="./imgs/slid/slid-1.png" alt="">
+          <div class="centerText">دقة<br>و خبرة عالية</div>
+        </div>
+        <div>
+          <img src="./imgs/slid/slid-2.png" alt="">
+          <div class="centerText">أجود<br>!!أنواع الخشب</div>
+        </div>
+        <div>
+          <img src="./imgs/slid/slid-3.png" alt="">
+          <div class="centerText">جودة<br>!و سعر منافس</div>
+        </div>
+        <div>
+          <img src="./imgs/slid/slid-4.png" alt="">
+          <div class="centerText">أيدي<br>عاملة ماهرة</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-new">
+      <div class="arrows">
+        <span id="arrowNav">
+          <i id="backImages" class="fa-solid fa-circle-arrow-left" onclick="prevGroup()">
+          </i>
+          <i id="nextImages" class="fa-solid fa-circle-arrow-right" onclick="nextGroup()">
+          </i>
+        </span>
+        <span>جديدنا</span>
+      </div>
+      <div id="new-gallery">
+        <div class="group">
+          <img src="./imgs/groups/img-1.png" alt="" onclick="openOurNew(this.src)">
+          <img src="./imgs/groups/img-2.png" alt="" onclick="openOurNew(this.src)">
+          <img src="./imgs/groups/img-3.png" alt="" onclick="openOurNew(this.src)">
+        </div>
+        <div class="group" style="display: none;">
+          <img src="./imgs/groups/img-4.png" alt="" onclick="openOurNew(this.src)">
+          <img src="./imgs/groups/img-5.png" alt="" onclick="openOurNew(this.src)">
+          <img src="./imgs/groups/img-6.png" alt="" onclick="openOurNew(this.src)">
+        </div>
+        <div class="group" style="display: none;">
+          <img src="./imgs/groups/img-7.png" alt="" onclick="openOurNew(this.src)">
+          <img src="./imgs/groups/img-8.png" alt="" onclick="openOurNew(this.src)">
+          <img src="./imgs/groups/img-9.png" alt="" onclick="openOurNew(this.src)">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <svg viewBox="0 0 1349 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path fill="rgba(16, 101, 198, 1)"
+        d="M 0 18 C 380.79999999999995 18 163.20000000000005 16 544 16 L 544 16 L 544 0 L 0 0 Z" stroke-width="0">
+      </path>
+      <path fill="rgba(16, 101, 198, 1)"
+        d="M 543 16 C 1107.1999999999998 16 784.8000000000001 114 1349 114 L 1349 114 L 1349 0 L 543 0 Z"
+        stroke-width="0"></path>
+    </svg>
+    <div class="footer">
+      <p><img src="./imgs/logo-b&w.png" alt="logo" class="f-logo"></p>
+      <div class="email-phone">
+        <p class="email">
+          <span>:البريد الالكتروني</span>
+          <span><a href="mailto:t.quality.price@gmail.com">t.quality.price@gmail.com</a></span>
+        </p>
+        <p>
+          <span>:هاتف</span>
+          <span><a href="tel:+966555398846">+966555398846</a></span>
+        </p>
+      </div>
+      <p class="p-qr"><img src="./imgs/qr.png" alt="qr" class="qr"></p>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>

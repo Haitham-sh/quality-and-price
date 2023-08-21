@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quality & price</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../imgs/logo-2.png">
+  <script src="https://kit.fontawesome.com/da543ab6e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="loadPage()">
+  <header>
+    <nav>
+      <div>
+        <img src="../imgs/logo-b&w.png" alt="logo">
+        <p onclick="openVideo()">من نحن ؟</p>
+      </div>
+      <ul>
+        <li><a href="./contact-us.html">تواصل معنا</a></li>
+        <li style="background-color: #255389"><a href="./products.html">منتجاتنا</a></li>
+        <li><a href="../index.html">الرئيسة</a></li>
+      </ul>
+    </nav>
+    <div id="hero">
+      <div id="right">
+        <p>
+          <span id="one">مؤسسة</span>
+          <span id="two">جودة و سعر</span>
+          <span id="three">quality & price</span>
+        </p>
+        <img src="../imgs/logo-2.png" alt="logo">
+      </div>
+      <div id="left">
+        <div class="button">
+          <a href="https://api.whatsapp.com/send?phone=966555398846">
+            <span>تواصل الان </span>
+            <img src="../imgs/whatsapp.png" alt="whatsapp-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <img src="../imgs/wave.png" alt="" id="wave">
+    <div id="theFULL"></div>
+    <div id="mask"></div>
+    <p id="close" onclick="closeVideo()">x</p>
+  </header>
+  <main>
+    <section>
+      <div class="title-us">اقسامنا</div>
+      <div id="new-gallery-prod">
+        <ul class="group">
+          <li class="prod-img" id="prod-img1" onclick="chooseDept(this.id, aluminum)">
+            <div>ألمنيوم</div>
+          </li>
+          <li class="prod-img" id="prod-img2" onclick="chooseDept(this.id, carpentry)">
+            <div>نجارة</div>
+          </li>
+          <li class="prod-img" id="prod-img3" onclick="chooseDept(this.id, ironWorks)">
+            <div>حدادة</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="allCategories">
+      <div class="categories" id="ironWorks">
+        <p class="category theAll" id="allCatgs1" onclick="chooseCategory(this.id, ironWorks)">All</p>
+        <p class="category" id="abuabH" onclick="chooseCategory(this.id, ironWorks)">أبواب</p>
+        <p class="category" id="mzalatWswater" onclick="chooseCategory(this.id, ironWorks)">مظلات و سواتر</p>
+        <p class="category" id="dicoratHaded" onclick="chooseCategory(this.id, ironWorks)">ديكورات حديد</p>
+        <p class="category" id="glsatHaded" onclick="chooseCategory(this.id, ironWorks)">جلسات حديد</p>
+        <p class="category" id="aamalHaded" onclick="chooseCategory(this.id, ironWorks)">اعمال حديد</p>
+      </div>
+      <div class="categories" id="carpentry">
+        <p class="category theAll" id="allCatgs2" onclick="chooseCategory(this.id, carpentry)">All</p>
+        <p class="category" id="abuabKH" onclick="chooseCategory(this.id, carpentry)">أبواب</p>
+        <p class="category" id="athath" onclick="chooseCategory(this.id, carpentry)">أثاث موبيليا</p>
+        <p class="category" id="dicoratKhshab" onclick="chooseCategory(this.id, carpentry)">ديكورات خشب</p>
+        <p class="category" id="nahtLezer" onclick="chooseCategory(this.id, carpentry)">نحت ليزر رواتر</p>
+      </div>
+      <div class="categories" id="aluminum">
+        <p class="category theAll" id="allCatgs3" onclick="chooseCategory(this.id, aluminum)">All</p>
+        <p class="category" id="klaiang" onclick="chooseCategory(this.id, aluminum)">مطابخ كلايانج</p>
+        <p class="category" id="maluminum" onclick="chooseCategory(this.id, aluminum)">مطابخ ألمنيوم</p>
+        <p class="category" id="sag" onclick="chooseCategory(this.id, aluminum)">مطابخ صاج</p>
+        <p class="category" id="khashab" onclick="chooseCategory(this.id, aluminum)">مطابخ خشب</p>
+      </div>
+    </section>
+    <section id="big-gallery">
+      <div class="images-gallery">
+      </div>
+      <div class="galleryL-R">
+        <button type="button" id="leftBtn" disabled onclick="prevGroup2()">
+          <i id="arrowLeft" class="fa-solid fa-circle-arrow-left">
+          </i>
+        </button>
+        <button type="button" id="rightBtn" onclick="nextGroup2()">
+          <i id="arrowRight" class="fa-solid fa-circle-arrow-right">
+          </i>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <svg viewBox="0 0 1349 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path fill="rgba(16, 101, 198, 1)"
+        d="M 0 18 C 380.79999999999995 18 163.20000000000005 16 544 16 L 544 16 L 544 0 L 0 0 Z" stroke-width="0">
+      </path>
+      <path fill="rgba(16, 101, 198, 1)"
+        d="M 543 16 C 1107.1999999999998 16 784.8000000000001 114 1349 114 L 1349 114 L 1349 0 L 543 0 Z"
+        stroke-width="0"></path>
+    </svg>
+    <div class="footer">
+      <p><img src="../imgs/logo-b&w.png" alt="logo" class="f-logo"></p>
+      <div class="email-phone">
+        <p class="email">
+          <span>:البريد الالكتروني</span>
+          <span><a href="mailto:t.quality.price@gmail.com">t.quality.price@gmail.com</a></span>
+        </p>
+        <p>
+          <span>:هاتف</span>
+          <span><a href="tel:+966555398846">+966555398846</a></span>
+        </p>
+      </div>
+      <p class="p-qr"><img src="../imgs/qr.png" alt="qr" class="qr"></p>
+    </div>
+  </footer>
+  <script src="../main.js"></script>
+</body>
+
+</html>
