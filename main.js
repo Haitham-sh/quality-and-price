@@ -10,14 +10,14 @@ const ironWorks = {
     "img-2 - Copy (10).png",
     "img-2 - Copy (11).png",
     "img-2.png",
-    "img-2 - Copy (12).png",
-    "img-2 - Copy (13).png",
-    "img-2 - Copy.png",
-    "img-2 - Copy (14).png",
-    "img-1 - Copy (15).png",
-    "img-2 - Copy (3).png",
-    "img-3 - Copy (4).png",
-    "img-4 - Copy (5).png",
+    // "img-2 - Copy (12).png",
+    // "img-2 - Copy (13).png",
+    // "img-2 - Copy.png",
+    // "img-2 - Copy (14).png",
+    // "img-1 - Copy (15).png",
+    // "img-2 - Copy (3).png",
+    // "img-3 - Copy (4).png",
+    // "img-4 - Copy (5).png",
   ],
   mzalatWswater: [
     "img-4.png",
@@ -251,7 +251,7 @@ updateImages.sort()
 function updatingGallery(updateImages, startImage, lastImage) {
   const containerGallery = document.getElementsByClassName("images-gallery")[0]
   containerGallery.innerHTML = ""
-  if (lastImage > updateImages.length) {
+  if (lastImage >= updateImages.length) {
     lastImage = updateImages.length
 
     document.getElementById("rightBtn").disabled = true
